@@ -51,6 +51,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -328,6 +329,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Collectable_Collected_1: 21300002
+      Collectable_Collected_2: 21300004
+      Collectable_Collected_3: 21300006
+      Collectable_Collected_0: 21300000
+      Collectable_Collected_4: 21300008
+      Collectable_Collected_8: 21300016
+      Collectable_Collected_7: 21300014
+      Collectable_Collected_5: 21300010
+      Collectable_Collected_6: 21300012
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

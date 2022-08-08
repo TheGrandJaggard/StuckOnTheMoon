@@ -81,6 +81,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -568,6 +569,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      MrClockworkSheet_17: 3143446522961267030
+      MrClockworkSheet_12: -2044637534909811349
+      MrClockworkSheet_7: -4754900630399371663
+      MrClockworkSheet_9: -394204204867884520
+      MrClockworkSheet_3: -2154302389231162529
+      MrClockworkSheet_18: 6302047433447217028
+      MrClockworkSheet_8: -5781392945152212480
+      MrClockworkSheet_14: -1610584654086336846
+      MrClockworkSheet_5: -1604563900523290359
+      MrClockworkSheet_15: -3436138825435646282
+      MrClockworkSheet_10: -6776917948848621843
+      MrClockworkSheet_11: -3633181196783428708
+      MrClockworkSheet_13: -4259985286393373953
+      MrClockworkSheet_4: -7433943464092835796
+      MrClockworkSheet_1: -1721885687753823957
+      MrClockworkSheet_16: -3574952632413668907
+      MrClockworkSheet_2: 8879829194965339106
+      MrClockworkSheet_6: -7826755367793165044
+      MrClockworkSheet_0: 5325455174355562970
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

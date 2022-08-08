@@ -15,7 +15,7 @@ public class LeverScript : MonoBehaviour
 
     void Start()
     {
-        Sprite = gameObject.GetComponent<SpriteRenderer>();
+        Sprite = GetComponentInChildren<SpriteRenderer>();
         Sprite.flipY = ToggledOn;
 
         Invoke("Starter", 0);

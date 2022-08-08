@@ -20,17 +20,18 @@ public class CharacterController2D : MonoBehaviour
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
 
-	public Animator Animator;
-	public GameObject ArmObject;
+	[SerializeField] private Animator Animator;
+
+	[SerializeField] private GameObject ArmObject;
 	private Transform ArmTransform;
 	private Vector3 MousePos;
-	private Vector2 GunVector;
-	private bool CanJump = true;
+
+    private bool CanJump = true;
 
 	private AudioSource PlayerAudio;
-	public AudioClip Landing;
-	public AudioClip Step1;
-	public AudioClip Step2;
+	[SerializeField] private AudioClip Landing;
+	[SerializeField] private AudioClip Step1;
+	[SerializeField] private AudioClip Step2;
 
 	private bool PlayStep1Next = true;
 	private int MakeStepNoise;
@@ -39,8 +40,8 @@ public class CharacterController2D : MonoBehaviour
 
 	private bool m_wasCrouching = false;
 
-	public bool CanControl = true;
-	public float RunSpeed = 40f;
+	private bool CanControl = true;
+	[SerializeField] private float RunSpeed = 40f;
 	private float Movement;
 	private bool Jump = false;
 	private bool Crouch = false;
@@ -60,8 +61,8 @@ public class CharacterController2D : MonoBehaviour
 		//	OnLandEvent = new UnityEvent();
 
 	}
-
-	void OnStartJumping()
+    #region Inputs
+    void OnStartJumping()
 	{
 		Jump = true;
 	}
@@ -85,9 +86,9 @@ public class CharacterController2D : MonoBehaviour
 	{
 		Movement = input.Get<float>() * RunSpeed;
 	}
+    #endregion
 
-
-	private void FixedUpdate()
+    private void FixedUpdate()
 	{
 		Animator.SetFloat("Speed", Mathf.Abs(Movement));
 

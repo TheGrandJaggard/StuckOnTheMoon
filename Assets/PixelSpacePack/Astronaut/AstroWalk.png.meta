@@ -51,6 +51,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -343,6 +344,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      AstroWalk_0: -7750761410467519339
+      AstroWalk_7: -3258305651147157043
+      AstroWalk_3: -5082971117998345730
+      AstroWalk_2: 3586078263622456036
+      AstroWalk_5: 1477211506544611
+      AstroWalk_1: 2356262865142047882
+      AstroWalk_6: 2934233246830421270
+      AstroWalk_4: 4854638451998381413
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

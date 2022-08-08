@@ -18,6 +18,7 @@ public class EndOfLevelScript : MonoBehaviour
         {
             EndOfLevelPanel.SetActive(true);
             EndOfLevelText.text = CongratulationsText;
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<TimeManager>().SetTimeSpeed(0f);
         }
     }
 }

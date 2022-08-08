@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public Slider Healthbar;
-    public int MaxHealth;
+    [SerializeField] private Slider Healthbar;
+    [SerializeField] private int MaxHealth;
     private int MyHealth;
-    public GameObject YouHaveDiedPanel;
+    [SerializeField] private GameObject YouHaveDiedPanel;
     private AudioSource PlayerAudio;
-    public AudioClip PlayerHurt;
-    public AudioClip DieSound;
+    [SerializeField] private AudioClip PlayerHurt;
+    [SerializeField] private AudioClip DieSound;
 
 
 
@@ -30,7 +30,7 @@ public class PlayerHealth : MonoBehaviour
         PlayerAudio.Play();
 
         MyHealth -= Damage;
-        Debug.Log("MyHealth = " + MyHealth.ToString());
+        //Debug.Log("MyHealth = " + MyHealth.ToString());
         Healthbar.value = MyHealth;
 
         if (MyHealth <= 0)
@@ -39,10 +39,10 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    public void GetHealth(int Health)
+    public void GainHealth(int Health)
     {
         MyHealth += Health;
-        Debug.Log("MyHealth = " + MyHealth.ToString());
+        //Debug.Log("MyHealth = " + MyHealth.ToString());
         Healthbar.value = MyHealth;
     }
 
@@ -52,6 +52,7 @@ public class PlayerHealth : MonoBehaviour
         PlayerAudio.Play();
 
         YouHaveDiedPanel.SetActive(true);
+        GameObject.FindGameObjectWithTag("GameController").GetComponent<TimeManager>().SetTimeSpeed(0f);
     }
 
     /*

@@ -6,18 +6,32 @@ using UnityEngine;
 public class Gunner : MonoBehaviour
 {
     private AudioSource Audio;
+    [Tooltip("Plays every time the gun is fired")]
     public AudioClip FiredClip;
 
-    public Transform FirePoint;
-
-    public GameObject Bullet;
-
+    private Transform FirePoint;
     private bool WantToShoot = false;
     private int CanFireNext = 0;
+
+    [Tooltip("Minimum delay between shots measured in Fixed Update frames")]
     public int FiringDelay;
+
+    [Header("Bullet Settings")]
+    [SerializeField] private GameObject BulletPrefab;
+    [Tooltip("Leave empty if this bullet does not explode")]
+    [SerializeField] private GameObject ExplosionPrefab;
+    [Tooltip("Bullet Speed is how much force gets added on awake")]
+    [SerializeField] private float BulletSpeed;
+    [Tooltip("The weight of the bullet")]
+    [SerializeField] private float BulletGravityScale;
+    [SerializeField] private int BulletDamage;
+    [SerializeField] private Vector2 BulletScale;
+    [SerializeField] private bool BulletCanPierce;
+    [SerializeField] private Sprite BulletSprite;
 
     void Start()
     {
+        FirePoint = transform.Find("FirePoint");
         Audio = GetComponent<AudioSource>();
     }
 
@@ -49,8 +63,12 @@ public class Gunner : MonoBehaviour
 
     void Shoot()
     {
-        Debug.Log("Shoot");
-        Instantiate(Bullet, FirePoint.position, FirePoint.rotation);
+        // Debug.Log("Shoot");
+
+        GameObject NewestBullet = Instantiate(BulletPrefab, FirePoint.position, FirePoint.rotation);
+        BulletScript BulletScript = NewestBullet.GetComponent<BulletScript>();
+        BulletScript.SetVariables(ExplosionPrefab, BulletSpeed, BulletGravityScale, BulletDamage, BulletScale, BulletCanPierce, BulletSprite);
+
         Audio.clip = FiredClip;
         Audio.Play();
     }

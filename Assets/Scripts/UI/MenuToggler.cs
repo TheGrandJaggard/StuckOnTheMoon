@@ -5,27 +5,32 @@ using UnityEngine;
 public class MenuToggler : MonoBehaviour
 {
     public GameObject Menu;
-    private bool MenuToggled;
+    private TimeManager TimeManagerScript;
+    private bool MenuActive;
 
     public void Start()
     {
         Menu.SetActive(false);
-        MenuToggled = false;
+        MenuActive = false;
+
+        TimeManagerScript = GameObject.FindWithTag("GameController").GetComponent<TimeManager>();
     }
 
     public void OnToggleMenu()
     {
-        if (MenuToggled == false)
+        if (MenuActive == false)
         {
             Menu.SetActive(true);
-            MenuToggled = true;
-            Time.timeScale = 0;
+            MenuActive = true;
+
+            TimeManagerScript.Pause(true);
         }
         else
         {
             Menu.SetActive(false);
-            MenuToggled = false;
-            Time.timeScale = 1;
+            MenuActive = false;
+
+            TimeManagerScript.Pause(false);
         }
     }
 }

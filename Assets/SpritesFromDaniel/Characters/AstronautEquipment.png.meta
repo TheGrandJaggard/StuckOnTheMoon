@@ -78,6 +78,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -544,6 +545,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      AstronautGuns_4: -3656281435476214283
+      AstronautGuns_6: -5133297465959725881
+      AstronautGuns_10: 3957722565820374140
+      AstronautGuns_3: -9216235921498141220
+      AstronautGuns_11: -1453395239366884834
+      AstronautGuns_14: -5079210112983989291
+      AstronautGuns_13: -3224837378166401962
+      AstronautGuns_15: 7619586812479830402
+      AstronautGuns_0: 5254406859720676024
+      AstronautGuns_9: -5347299710938044059
+      AstronautGuns_7: 2296384684378737809
+      AstronautGuns_12: 3886822248043447332
+      AstronautGuns_5: -2487439228725093866
+      AstronautGuns_2: 3772227285148259118
+      AstronautGuns_17: 7781024501387372996
+      AstronautGuns_1: 6506180696683737860
+      AstronautGuns_8: 789360224585927071
+      AstronautGuns_16: -8509695204199159253
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

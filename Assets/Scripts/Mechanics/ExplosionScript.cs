@@ -16,14 +16,14 @@ public class ExplosionScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D Info)
     {
-        EnemyScript EnemyScript = Info.GetComponent<EnemyScript>();
+        EnemyScript Enemy = Info.GetComponent<EnemyScript>();
 
         //Debug.Log("I hit " + Info.name);
 
-        if (EnemyScript != null)
+        if (Enemy != null)
         {
             //Debug.Log("I hit an enemy");
-            EnemyScript.TakeDamage(DamageToDo);
+            Enemy.TakeDamage(DamageToDo);
         }
     }
 

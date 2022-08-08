@@ -84,6 +84,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -592,6 +593,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Unity_MC_render_spawn_8: 21300016
+      Unity_MC_render_spawn_7: 21300014
+      Unity_MC_render_spawn_12: 21300024
+      Unity_MC_render_spawn_9: 21300018
+      Unity_MC_render_spawn_19: 21300038
+      Unity_MC_render_spawn_4: 21300008
+      Unity_MC_render_spawn_16: 21300032
+      Unity_MC_render_spawn_17: 21300034
+      Unity_MC_render_spawn_18: 21300036
+      Unity_MC_render_spawn_6: 21300012
+      Unity_MC_render_spawn_11: 21300022
+      Unity_MC_render_spawn_3: 21300006
+      Unity_MC_render_spawn_5: 21300010
+      Unity_MC_render_spawn_2: 21300004
+      Unity_MC_render_spawn_14: 21300028
+      Unity_MC_render_spawn_15: 21300030
+      Unity_MC_render_spawn_1: 21300002
+      Unity_MC_render_spawn_0: 21300000
+      Unity_MC_render_spawn_10: 21300020
+      Unity_MC_render_spawn_13: 21300026
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

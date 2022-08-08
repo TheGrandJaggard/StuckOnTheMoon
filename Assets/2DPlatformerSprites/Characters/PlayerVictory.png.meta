@@ -63,6 +63,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -424,6 +425,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Unity_MC_render_victory_11: 21300022
+      Unity_MC_render_victory_7: 21300014
+      Unity_MC_render_victory_10: 21300020
+      Unity_MC_render_victory_2: 21300004
+      Unity_MC_render_victory_12: 21300024
+      Unity_MC_render_victory_3: 21300006
+      Unity_MC_render_victory_5: 21300010
+      Unity_MC_render_victory_1: 21300002
+      Unity_MC_render_victory_4: 21300008
+      Unity_MC_render_victory_8: 21300016
+      Unity_MC_render_victory_0: 21300000
+      Unity_MC_render_victory_6: 21300012
+      Unity_MC_render_victory_9: 21300018
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

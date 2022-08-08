@@ -142,9 +142,11 @@ public class CharacterController2D : MonoBehaviour
 				if (!wasGrounded)
 				{
 					//OnLandEvent.Invoke();
-
-					PlayerAudio.clip = Landing;
-					PlayerAudio.Play();
+					if (Crouch == false)
+					{
+						PlayerAudio.clip = Landing;
+						PlayerAudio.Play();
+					}
 				}
 			}
 		}
@@ -188,11 +190,11 @@ public class CharacterController2D : MonoBehaviour
 			// If crouching
 			if (AmCrouching)
 			{
+				CanJump = false;
 				if (!m_wasCrouching)
 				{
 					m_wasCrouching = true;
 					ArmObject.SetActive(false);
-					CanJump = false;
 				}
 
 				// Reduce the speed by the crouchSpeed multiplier

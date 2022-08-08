@@ -36,6 +36,7 @@ public class BulletScript : MonoBehaviour
     void OnTriggerEnter2D(Collider2D Info)
     {
         EnemyScript EnemyScript = Info.GetComponent<EnemyScript>();
+        DummyScript DummyScript = Info.GetComponent<DummyScript>();
 
         if (ExplosionPrefab != null)
         {
@@ -46,6 +47,10 @@ public class BulletScript : MonoBehaviour
         else if (EnemyScript != null)
         {
             EnemyScript.TakeDamage(Damage);
+        }
+        else if (DummyScript != null)
+        {
+            DummyScript.TakeDamage(Damage);
         }
             
         if (CanPierce == false || Info.tag == "Obstacle")
